@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - RecordRTC Demo - Microphone Buffer Stream</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="row">
+    <h4>Press record and read the text below. Press stop button when finished reading.</h4>
+    <h1>After recording atleast 10 files, click the download button to get the zip file. Email this zip file to ritwik.mohanty@avaamo.com</h1>
+  </div>
+  <div class="row">
+    <div id="random_text"></div>
+  </div>
+  <div class="row">
+    <button class="btn" id="record">RECORD</button>
+    <button class="btn" id="stop">STOP</button>
+    <button class="btn" id="download">DOWNLOAD</button>
+  </div>
+  <div class="collection" id="results"></div>
+</div>
+<!-- partial -->
+  <script src='https://cdn.webrtc-experiment.com/RecordRTC.js'></script>
+<script src='https://webrtc.github.io/adapter/adapter-latest.js'></script><script type="module" src="./script.js"></script>
+
+</body>
+</html>
